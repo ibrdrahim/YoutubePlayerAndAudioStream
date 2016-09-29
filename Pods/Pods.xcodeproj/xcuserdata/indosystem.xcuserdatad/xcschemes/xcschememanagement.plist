@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-LiveStream.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LiveStreamTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-LiveStreamUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>youtube-ios-player-helper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2142ADF795B114AF0AC8F73E8397DBB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3E207412AA4C8D7F850B0B2FB71CD7AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B1A699727F2099C91302F003002D9E2D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C81F46A2BDD68E638BE2E15571739F60</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

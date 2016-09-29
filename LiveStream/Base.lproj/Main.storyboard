@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="F5l-KK-eH1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Youtube Player Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="YoutubePlayerController" customModule="LiveStream" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="JSON RESPONSE" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n6K-e3-XpD">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsY-WW-k44" customClass="YTPlayerView">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="mML-8M-Gac"/>
+                                    <constraint firstAttribute="width" constant="375" id="rYp-pK-jZN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n6K-e3-XpD" firstAttribute="trailing" secondItem="zsY-WW-k44" secondAttribute="trailing" id="1KQ-1q-emd"/>
+                            <constraint firstItem="zsY-WW-k44" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2UM-1h-GXK"/>
+                            <constraint firstItem="n6K-e3-XpD" firstAttribute="leading" secondItem="zsY-WW-k44" secondAttribute="leading" id="6n1-Nd-Cra"/>
+                            <constraint firstItem="zsY-WW-k44" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-148" id="Wd0-sJ-TDQ"/>
+                            <constraint firstItem="n6K-e3-XpD" firstAttribute="top" secondItem="zsY-WW-k44" secondAttribute="bottom" constant="18" id="aov-1H-60W"/>
+                            <constraint firstItem="n6K-e3-XpD" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="yAe-DK-1BR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jsonRestText" destination="n6K-e3-XpD" id="76N-qM-Dge"/>
+                        <outlet property="playerView" destination="zsY-WW-k44" id="APg-zT-XP1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="1487"/>
+        </scene>
+        <!--Submit Youtube VideoID Controller-->
+        <scene sceneID="sKI-1s-1lG">
+            <objects>
+                <viewController id="SPZ-PN-3kt" customClass="SubmitYoutubeVideoIDController" customModule="LiveStream" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9fH-05-CDS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mx2-RF-W0S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c0A-5h-Aio">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Youtube Video ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAD-LK-KjB">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hxg-df-ZGl">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mq-Rd-CVV">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="obk-Qo-ZxU"/>
+                                </constraints>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.73725490199999999" green="0.18039215689999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="submitVideoID" id="tvb-5j-ltt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.18039215689999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hxg-df-ZGl" firstAttribute="top" secondItem="XAD-LK-KjB" secondAttribute="bottom" constant="34" id="DYZ-Oc-D31"/>
+                            <constraint firstItem="XAD-LK-KjB" firstAttribute="top" secondItem="9fH-05-CDS" secondAttribute="bottom" constant="129" id="Mn3-2V-dfc"/>
+                            <constraint firstItem="Hxg-df-ZGl" firstAttribute="centerX" secondItem="1mq-Rd-CVV" secondAttribute="centerX" id="OqA-oe-yZ7"/>
+                            <constraint firstItem="Hxg-df-ZGl" firstAttribute="trailing" secondItem="c0A-5h-Aio" secondAttribute="trailingMargin" id="kYf-2u-MXL"/>
+                            <constraint firstItem="1mq-Rd-CVV" firstAttribute="top" secondItem="Hxg-df-ZGl" secondAttribute="bottom" constant="47" id="naq-mH-ga7"/>
+                            <constraint firstItem="XAD-LK-KjB" firstAttribute="centerX" secondItem="Hxg-df-ZGl" secondAttribute="centerX" id="qWe-lg-HVD"/>
+                            <constraint firstItem="Hxg-df-ZGl" firstAttribute="leading" secondItem="c0A-5h-Aio" secondAttribute="leadingMargin" id="vXN-dt-V38"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FOL-WE-CrI"/>
+                    <connections>
+                        <outlet property="videoIDField" destination="Hxg-df-ZGl" id="Xiq-Ss-t38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zai-yX-5Es" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="704"/>
+        </scene>
+        <!--Youtube Live-->
+        <scene sceneID="UXT-RA-tO7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XOI-MC-5XU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Youtube Live" image="youtube-ico" selectedImage="youtube-ico" id="Xkc-9g-wU1"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="klj-4Z-JQc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SPZ-PN-3kt" kind="relationship" relationship="rootViewController" id="aT1-dp-WLw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WSv-6Z-vjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="-43"/>
+        </scene>
+        <!--Audio Stream-->
+        <scene sceneID="9Ej-TM-jnl">
+            <objects>
+                <viewController id="F9S-Pe-lfz" customClass="StreamAudioController" customModule="LiveStream" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gu6-QT-fmS"/>
+                        <viewControllerLayoutGuide type="bottom" id="FdX-cq-hNf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Id-F3-sw1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIi-G8-GK9">
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="F9S-Pe-lfz" eventType="touchUpInside" id="pTx-F1-CwL"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sde-to-Rdm">
+                                <connections>
+                                    <action selector="sliderChange:" destination="F9S-Pe-lfz" eventType="valueChanged" id="ouo-4H-X9Q"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D1-Cu-vkh">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdq-xn-EMC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745100000001" green="0.43921568630000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="Sde-to-Rdm" secondAttribute="leading" id="6IK-bN-YU3"/>
+                            <constraint firstItem="Sde-to-Rdm" firstAttribute="top" secondItem="aIi-G8-GK9" secondAttribute="bottom" constant="70" id="7AG-3m-5Qw"/>
+                            <constraint firstItem="fdq-xn-EMC" firstAttribute="baseline" secondItem="1D1-Cu-vkh" secondAttribute="baseline" id="QaP-AJ-Jss"/>
+                            <constraint firstItem="fdq-xn-EMC" firstAttribute="top" secondItem="Sde-to-Rdm" secondAttribute="bottom" constant="8" symbolic="YES" id="Tsp-5x-fCd"/>
+                            <constraint firstItem="fdq-xn-EMC" firstAttribute="leading" secondItem="Sde-to-Rdm" secondAttribute="leading" id="bjI-Nf-h2d"/>
+                            <constraint firstItem="aIi-G8-GK9" firstAttribute="centerX" secondItem="5Id-F3-sw1" secondAttribute="centerX" id="gb8-er-SxD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sde-to-Rdm" secondAttribute="trailing" id="rea-ha-xz5"/>
+                            <constraint firstItem="aIi-G8-GK9" firstAttribute="centerY" secondItem="5Id-F3-sw1" secondAttribute="centerY" id="t9g-IU-dd8"/>
+                            <constraint firstItem="1D1-Cu-vkh" firstAttribute="trailing" secondItem="Sde-to-Rdm" secondAttribute="trailing" id="yBb-CK-pRZ"/>
+                            <constraint firstItem="Sde-to-Rdm" firstAttribute="leading" secondItem="aIi-G8-GK9" secondAttribute="leading" id="z2Q-Ni-GuV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Audio Stream" image="audio-ico" selectedImage="audio-ico" id="HJy-Uh-ZDL"/>
+                    <connections>
+                        <outlet property="currentPlayTime" destination="fdq-xn-EMC" id="DjQ-l0-j5Z"/>
+                        <outlet property="playButton" destination="aIi-G8-GK9" id="JwG-nl-ele"/>
+                        <outlet property="remainingPlayTIme" destination="1D1-Cu-vkh" id="Vfj-vp-CaA"/>
+                        <outlet property="slider" destination="Sde-to-Rdm" id="4Hj-Oi-tCc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCX-ch-bvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317.5999999999999" y="-44.527736131934034"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="d6T-A0-itZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="F5l-KK-eH1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="vrf-zv-rVR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="XOI-MC-5XU" kind="relationship" relationship="viewControllers" id="Bxa-rt-eN7"/>
+                        <segue destination="F9S-Pe-lfz" kind="relationship" relationship="viewControllers" id="doJ-Mf-VEb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4UN-lj-shw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="-802"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="audio-ico" width="32" height="32"/>
+        <image name="play" width="128" height="128"/>
+        <image name="youtube-ico" width="32" height="32"/>
+    </resources>
+</document>

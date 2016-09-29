@@ -1,0 +1,6 @@
+framework module Pods_LiveStreamUITests {
+  umbrella header "Pods-LiveStreamUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A34B7391D9B7DB800D1CAA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A34B7381D9B7DB800D1CAA1 /* AppDelegate.swift */; };
+		2A34B73B1D9B7DB800D1CAA1 /* YoutubePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A34B73A1D9B7DB800D1CAA1 /* YoutubePlayerController.swift */; };
+		2A34B73E1D9B7DB800D1CAA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A34B73C1D9B7DB800D1CAA1 /* Main.storyboard */; };
+		2A34B7401D9B7DB800D1CAA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A34B73F1D9B7DB800D1CAA1 /* Assets.xcassets */; };
+		2A34B7431D9B7DB800D1CAA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A34B7411D9B7DB800D1CAA1 /* LaunchScreen.storyboard */; };
+		2A34B74E1D9B7DB800D1CAA1 /* LiveStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A34B74D1D9B7DB800D1CAA1 /* LiveStreamTests.swift */; };
+		2A34B7591D9B7DB800D1CAA1 /* LiveStreamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A34B7581D9B7DB800D1CAA1 /* LiveStreamUITests.swift */; };
+		2ADA06061D9BAC91009C363D /* SubmitYoutubeVideoIDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA06051D9BAC91009C363D /* SubmitYoutubeVideoIDController.swift */; };
+		2ADA06081D9BB833009C363D /* StreamAudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA06071D9BB833009C363D /* StreamAudioController.swift */; };
+		31F67BD95DCA6A93264BA690 /* Pods_LiveStreamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FEA2C5BEDB081695F4B62B /* Pods_LiveStreamUITests.framework */; };
+		7ED9D467CBF2852DA407953E /* Pods_LiveStreamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CCBC89D594B9DCCA6C29243 /* Pods_LiveStreamTests.framework */; };
+		BE1E5CF2860AFB3380F8E307 /* Pods_LiveStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D344A3DD83D12F6D68D890 /* Pods_LiveStream.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A34B74A1D9B7DB800D1CAA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A34B72D1D9B7DB700D1CAA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A34B7341D9B7DB800D1CAA1;
+			remoteInfo = LiveStream;
+		};
+		2A34B7551D9B7DB800D1CAA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A34B72D1D9B7DB700D1CAA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A34B7341D9B7DB800D1CAA1;
+			remoteInfo = LiveStream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04A775C77A0148C427D06590 /* Pods-LiveStreamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStreamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStreamUITests/Pods-LiveStreamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A34B7351D9B7DB800D1CAA1 /* LiveStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A34B7381D9B7DB800D1CAA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A34B73A1D9B7DB800D1CAA1 /* YoutubePlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubePlayerController.swift; sourceTree = "<group>"; };
+		2A34B73D1D9B7DB800D1CAA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A34B73F1D9B7DB800D1CAA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A34B7421D9B7DB800D1CAA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A34B7441D9B7DB800D1CAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A34B7491D9B7DB800D1CAA1 /* LiveStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A34B74D1D9B7DB800D1CAA1 /* LiveStreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamTests.swift; sourceTree = "<group>"; };
+		2A34B74F1D9B7DB800D1CAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A34B7541D9B7DB800D1CAA1 /* LiveStreamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveStreamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A34B7581D9B7DB800D1CAA1 /* LiveStreamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamUITests.swift; sourceTree = "<group>"; };
+		2A34B75A1D9B7DB800D1CAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A498C611D9BA43800A75717 /* LiveStream-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveStream-Bridging-Header.h"; sourceTree = "<group>"; };
+		2ADA06051D9BAC91009C363D /* SubmitYoutubeVideoIDController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitYoutubeVideoIDController.swift; sourceTree = "<group>"; };
+		2ADA06071D9BB833009C363D /* StreamAudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamAudioController.swift; sourceTree = "<group>"; };
+		2CCBC89D594B9DCCA6C29243 /* Pods_LiveStreamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStreamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62D344A3DD83D12F6D68D890 /* Pods_LiveStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E89DC43569350F442832DD /* Pods-LiveStreamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStreamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStreamUITests/Pods-LiveStreamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BDF8D3EEFC02651EDA315FEB /* Pods-LiveStreamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStreamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStreamTests/Pods-LiveStreamTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFC6FD03F96749CC0C09BBFE /* Pods-LiveStreamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStreamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStreamTests/Pods-LiveStreamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4969CB859B957886CDF5A04 /* Pods-LiveStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream.release.xcconfig"; sourceTree = "<group>"; };
+		C5FEA2C5BEDB081695F4B62B /* Pods_LiveStreamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveStreamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63EE31E53886CCD06557199 /* Pods-LiveStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A34B7321D9B7DB800D1CAA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1E5CF2860AFB3380F8E307 /* Pods_LiveStream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A34B7461D9B7DB800D1CAA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ED9D467CBF2852DA407953E /* Pods_LiveStreamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A34B7511D9B7DB800D1CAA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F67BD95DCA6A93264BA690 /* Pods_LiveStreamUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A34B72C1D9B7DB700D1CAA1 = {
+			isa = PBXGroup;
+			children = (
+				2A34B7371D9B7DB800D1CAA1 /* LiveStream */,
+				2A34B74C1D9B7DB800D1CAA1 /* LiveStreamTests */,
+				2A34B7571D9B7DB800D1CAA1 /* LiveStreamUITests */,
+				2A34B7361D9B7DB800D1CAA1 /* Products */,
+				8ACBA7226F0D9E3897397A79 /* Pods */,
+				D3B9BF2520BDE78E3FDA5208 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A34B7361D9B7DB800D1CAA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A34B7351D9B7DB800D1CAA1 /* LiveStream.app */,
+				2A34B7491D9B7DB800D1CAA1 /* LiveStreamTests.xctest */,
+				2A34B7541D9B7DB800D1CAA1 /* LiveStreamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A34B7371D9B7DB800D1CAA1 /* LiveStream */ = {
+			isa = PBXGroup;
+			children = (
+				2A498C611D9BA43800A75717 /* LiveStream-Bridging-Header.h */,
+				2A34B7381D9B7DB800D1CAA1 /* AppDelegate.swift */,
+				2A34B73A1D9B7DB800D1CAA1 /* YoutubePlayerController.swift */,
+				2A34B73C1D9B7DB800D1CAA1 /* Main.storyboard */,
+				2ADA06071D9BB833009C363D /* StreamAudioController.swift */,
+				2ADA06051D9BAC91009C363D /* SubmitYoutubeVideoIDController.swift */,
+				2A34B73F1D9B7DB800D1CAA1 /* Assets.xcassets */,
+				2A34B7411D9B7DB800D1CAA1 /* LaunchScreen.storyboard */,
+				2A34B7441D9B7DB800D1CAA1 /* Info.plist */,
+			);
+			path = LiveStream;
+			sourceTree = "<group>";
+		};
+		2A34B74C1D9B7DB800D1CAA1 /* LiveStreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A34B74D1D9B7DB800D1CAA1 /* LiveStreamTests.swift */,
+				2A34B74F1D9B7DB800D1CAA1 /* Info.plist */,
+			);
+			path = LiveStreamTests;
+			sourceTree = "<group>";
+		};
+		2A34B7571D9B7DB800D1CAA1 /* LiveStreamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A34B7581D9B7DB800D1CAA1 /* LiveStreamUITests.swift */,
+				2A34B75A1D9B7DB800D1CAA1 /* Info.plist */,
+			);
+			path = LiveStreamUITests;
+			sourceTree = "<group>";
+		};
+		8ACBA7226F0D9E3897397A79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D63EE31E53886CCD06557199 /* Pods-LiveStream.debug.xcconfig */,
+				C4969CB859B957886CDF5A04 /* Pods-LiveStream.release.xcconfig */,
+				BFC6FD03F96749CC0C09BBFE /* Pods-LiveStreamTests.debug.xcconfig */,
+				BDF8D3EEFC02651EDA315FEB /* Pods-LiveStreamTests.release.xcconfig */,
+				04A775C77A0148C427D06590 /* Pods-LiveStreamUITests.debug.xcconfig */,
+				A3E89DC43569350F442832DD /* Pods-LiveStreamUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3B9BF2520BDE78E3FDA5208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62D344A3DD83D12F6D68D890 /* Pods_LiveStream.framework */,
+				2CCBC89D594B9DCCA6C29243 /* Pods_LiveStreamTests.framework */,
+				C5FEA2C5BEDB081695F4B62B /* Pods_LiveStreamUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A34B7341D9B7DB800D1CAA1 /* LiveStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A34B75D1D9B7DB800D1CAA1 /* Build configuration list for PBXNativeTarget "LiveStream" */;
+			buildPhases = (
+				0DCF87060BEA6DE4CD8021E6 /* [CP] Check Pods Manifest.lock */,
+				2A34B7311D9B7DB800D1CAA1 /* Sources */,
+				2A34B7321D9B7DB800D1CAA1 /* Frameworks */,
+				2A34B7331D9B7DB800D1CAA1 /* Resources */,
+				00D330E17F90453907AD967A /* [CP] Embed Pods Frameworks */,
+				B330178709E0A141A818DF5F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveStream;
+			productName = LiveStream;
+			productReference = 2A34B7351D9B7DB800D1CAA1 /* LiveStream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A34B7481D9B7DB800D1CAA1 /* LiveStreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A34B7601D9B7DB800D1CAA1 /* Build configuration list for PBXNativeTarget "LiveStreamTests" */;
+			buildPhases = (
+				372B4A3A82F297EDAC75945D /* [CP] Check Pods Manifest.lock */,
+				2A34B7451D9B7DB800D1CAA1 /* Sources */,
+				2A34B7461D9B7DB800D1CAA1 /* Frameworks */,
+				2A34B7471D9B7DB800D1CAA1 /* Resources */,
+				B611D30E6CEAA24D5F25EA7D /* [CP] Embed Pods Frameworks */,
+				20ED7EFD6F0B720FDA4EABC6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A34B74B1D9B7DB800D1CAA1 /* PBXTargetDependency */,
+			);
+			name = LiveStreamTests;
+			productName = LiveStreamTests;
+			productReference = 2A34B7491D9B7DB800D1CAA1 /* LiveStreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A34B7531D9B7DB800D1CAA1 /* LiveStreamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A34B7631D9B7DB800D1CAA1 /* Build configuration list for PBXNativeTarget "LiveStreamUITests" */;
+			buildPhases = (
+				8F495BEF39AEDE2B97B2551E /* [CP] Check Pods Manifest.lock */,
+				2A34B7501D9B7DB800D1CAA1 /* Sources */,
+				2A34B7511D9B7DB800D1CAA1 /* Frameworks */,
+				2A34B7521D9B7DB800D1CAA1 /* Resources */,
+				B4AD867D1723A8A680D34912 /* [CP] Embed Pods Frameworks */,
+				7E48DF71C45F0BD6B8A700C3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A34B7561D9B7DB800D1CAA1 /* PBXTargetDependency */,
+			);
+			name = LiveStreamUITests;
+			productName = LiveStreamUITests;
+			productReference = 2A34B7541D9B7DB800D1CAA1 /* LiveStreamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A34B72D1D9B7DB700D1CAA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Indosytem;
+				TargetAttributes = {
+					2A34B7341D9B7DB800D1CAA1 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					2A34B7481D9B7DB800D1CAA1 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A34B7341D9B7DB800D1CAA1;
+					};
+					2A34B7531D9B7DB800D1CAA1 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A34B7341D9B7DB800D1CAA1;
+					};
+				};
+			};
+			buildConfigurationList = 2A34B7301D9B7DB700D1CAA1 /* Build configuration list for PBXProject "LiveStream" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A34B72C1D9B7DB700D1CAA1;
+			productRefGroup = 2A34B7361D9B7DB800D1CAA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A34B7341D9B7DB800D1CAA1 /* LiveStream */,
+				2A34B7481D9B7DB800D1CAA1 /* LiveStreamTests */,
+				2A34B7531D9B7DB800D1CAA1 /* LiveStreamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A34B7331D9B7DB800D1CAA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A34B7431D9B7DB800D1CAA1 /* LaunchScreen.storyboard in Resources */,
+				2A34B7401D9B7DB800D1CAA1 /* Assets.xcassets in Resources */,
+				2A34B73E1D9B7DB800D1CAA1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A34B7471D9B7DB800D1CAA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A34B7521D9B7DB800D1CAA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00D330E17F90453907AD967A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0DCF87060BEA6DE4CD8021E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		20ED7EFD6F0B720FDA4EABC6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveStreamTests/Pods-LiveStreamTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		372B4A3A82F297EDAC75945D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7E48DF71C45F0BD6B8A700C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveStreamUITests/Pods-LiveStreamUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F495BEF39AEDE2B97B2551E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B330178709E0A141A818DF5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveStream/Pods-LiveStream-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4AD867D1723A8A680D34912 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveStreamUITests/Pods-LiveStreamUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B611D30E6CEAA24D5F25EA7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LiveStreamTests/Pods-LiveStreamTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A34B7311D9B7DB800D1CAA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADA06081D9BB833009C363D /* StreamAudioController.swift in Sources */,
+				2A34B73B1D9B7DB800D1CAA1 /* YoutubePlayerController.swift in Sources */,
+				2A34B7391D9B7DB800D1CAA1 /* AppDelegate.swift in Sources */,
+				2ADA06061D9BAC91009C363D /* SubmitYoutubeVideoIDController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A34B7451D9B7DB800D1CAA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A34B74E1D9B7DB800D1CAA1 /* LiveStreamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A34B7501D9B7DB800D1CAA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A34B7591D9B7DB800D1CAA1 /* LiveStreamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A34B74B1D9B7DB800D1CAA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A34B7341D9B7DB800D1CAA1 /* LiveStream */;
+			targetProxy = 2A34B74A1D9B7DB800D1CAA1 /* PBXContainerItemProxy */;
+		};
+		2A34B7561D9B7DB800D1CAA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A34B7341D9B7DB800D1CAA1 /* LiveStream */;
+			targetProxy = 2A34B7551D9B7DB800D1CAA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A34B73C1D9B7DB800D1CAA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A34B73D1D9B7DB800D1CAA1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A34B7411D9B7DB800D1CAA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A34B7421D9B7DB800D1CAA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A34B75B1D9B7DB800D1CAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A34B75C1D9B7DB800D1CAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A34B75E1D9B7DB800D1CAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D63EE31E53886CCD06557199 /* Pods-LiveStream.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiveStream/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Indosystem.LiveStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveStream/LiveStream-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2A34B75F1D9B7DB800D1CAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4969CB859B957886CDF5A04 /* Pods-LiveStream.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LiveStream/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Indosystem.LiveStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveStream/LiveStream-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2A34B7611D9B7DB800D1CAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFC6FD03F96749CC0C09BBFE /* Pods-LiveStreamTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LiveStreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Indosystem.LiveStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveStream.app/LiveStream";
+			};
+			name = Debug;
+		};
+		2A34B7621D9B7DB800D1CAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDF8D3EEFC02651EDA315FEB /* Pods-LiveStreamTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LiveStreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Indosystem.LiveStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveStream.app/LiveStream";
+			};
+			name = Release;
+		};
+		2A34B7641D9B7DB800D1CAA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A775C77A0148C427D06590 /* Pods-LiveStreamUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LiveStreamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Indosystem.LiveStreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LiveStream;
+			};
+			name = Debug;
+		};
+		2A34B7651D9B7DB800D1CAA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E89DC43569350F442832DD /* Pods-LiveStreamUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LiveStreamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Indosystem.LiveStreamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LiveStream;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A34B7301D9B7DB700D1CAA1 /* Build configuration list for PBXProject "LiveStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A34B75B1D9B7DB800D1CAA1 /* Debug */,
+				2A34B75C1D9B7DB800D1CAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A34B75D1D9B7DB800D1CAA1 /* Build configuration list for PBXNativeTarget "LiveStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A34B75E1D9B7DB800D1CAA1 /* Debug */,
+				2A34B75F1D9B7DB800D1CAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A34B7601D9B7DB800D1CAA1 /* Build configuration list for PBXNativeTarget "LiveStreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A34B7611D9B7DB800D1CAA1 /* Debug */,
+				2A34B7621D9B7DB800D1CAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A34B7631D9B7DB800D1CAA1 /* Build configuration list for PBXNativeTarget "LiveStreamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A34B7641D9B7DB800D1CAA1 /* Debug */,
+				2A34B7651D9B7DB800D1CAA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A34B72D1D9B7DB700D1CAA1 /* Project object */;
+}
